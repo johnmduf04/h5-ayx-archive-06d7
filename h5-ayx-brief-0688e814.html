@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏体育 · 一点日常记录</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9f6f0;
+            font-family: 'Georgia', 'Times New Roman', '宋体', 'SimSun', serif;
+            color: #2c2b28;
+            line-height: 1.8;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page-wrap {
+            max-width: 740px;
+            width: 100%;
+            background: #fcfaf5;
+            padding: 48px 40px 56px;
+            border-radius: 2px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            color: #3a3733;
+            margin-top: 0;
+            margin-bottom: 8px;
+            line-height: 1.3;
+            border-left: 4px solid #b8a99a;
+            padding-left: 18px;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #7b756e;
+            margin-bottom: 32px;
+            font-style: italic;
+            padding-left: 22px;
+        }
+
+        .byline {
+            font-size: 0.9rem;
+            color: #9c9288;
+            border-bottom: 1px solid #e5ded5;
+            padding-bottom: 20px;
+            margin-bottom: 28px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        p {
+            margin-bottom: 1.6em;
+            text-align: justify;
+            word-break: break-word;
+        }
+
+        .pull-quote {
+            background: #f2ede6;
+            border-left: 6px solid #c7b6a4;
+            padding: 18px 24px;
+            margin: 30px 0 32px;
+            font-size: 1.05rem;
+            color: #4e4942;
+            border-radius: 0 6px 6px 0;
+            font-style: normal;
+            letter-spacing: 0.2px;
+            line-height: 1.7;
+        }
+
+        .pull-quote::before {
+            content: "☝ 提示 · ";
+            font-weight: 500;
+            color: #8b7b6a;
+        }
+
+        .highlight-box {
+            background: #efeae1;
+            padding: 20px 24px;
+            border-radius: 12px;
+            margin: 32px 0 28px;
+            border: 1px solid #dcd3c8;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0.8em;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .inset-link {
+            display: inline-block;
+            background: #e8e0d6;
+            padding: 0 6px;
+            color: #4f453b;
+            text-decoration: none;
+            border-bottom: 1px dashed #b3a392;
+            transition: background 0.2s;
+        }
+
+        .inset-link:hover {
+            background: #d4c9bb;
+            border-bottom: 1px solid #7a6b5c;
+        }
+
+        .faq-mini {
+            margin: 36px 0 20px;
+            border-top: 1px solid #e0d7cc;
+            padding-top: 28px;
+        }
+
+        .faq-item {
+            margin-bottom: 18px;
+        }
+
+        .faq-q {
+            font-weight: 600;
+            color: #4b4239;
+            margin-bottom: 4px;
+            font-size: 1rem;
+        }
+
+        .faq-a {
+            padding-left: 18px;
+            color: #5d554b;
+            border-left: 2px solid #dacfc2;
+            font-size: 0.96rem;
+        }
+
+        .footer-note {
+            margin-top: 40px;
+            padding-top: 18px;
+            border-top: 1px solid #e3dbd0;
+            font-size: 0.85rem;
+            color: #8a7f73;
+            text-align: right;
+        }
+
+        a {
+            color: #6b5e50;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #c9bbab;
+        }
+
+        a:hover {
+            color: #3f362e;
+            text-decoration-color: #7a6b5c;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 16px 12px;
+            }
+            .page-wrap {
+                padding: 28px 18px 36px;
+            }
+            h1 {
+                font-size: 1.6rem;
+                padding-left: 14px;
+            }
+            .byline {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .pull-quote {
+                padding: 14px 16px;
+                font-size: 0.98rem;
+            }
+            .highlight-box {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrap">
+        <h1>爱游戏体育 · 日常查询与延伸</h1>
+        <div class="subhead">一次对照，一段笔记，一些漫谈</div>
+        <div class="byline">
+            <span>随笔 · 2025</span>
+            <span>整理自日常记录与公开信息</span>
+        </div>
+
+        <p>
+            说起来，最早留意到<a href="https://h5-ayx-sport.com">爱游戏体育</a>这个平台，是因为一次很普通的查询。当时想比对几项运动赛事的实时数据，翻了好几个页面都觉得信息密度太低——要么堆满广告，要么数据更新慢半拍。后来从一篇旧帖子里看到有人顺手贴了个链接，点进去发现界面清爽，赛事归类也直接，没有那些花里胡哨的弹窗。从那天起，它就慢慢变成了我查比分和赛程时的一个习惯落脚点。
+        </p>
+
+        <p>
+            我其实不太喜欢把某个网站当成“唯一选择”，但用久了确实会形成一种路径依赖。尤其是当你想快速确认某个联赛的下一轮时间，或者对比不同队伍的近期走势时，一个干净、响应快的页面能省下不少耐心。<a href="https://h5-ayx-sport.com" class="inset-link">爱游戏体育</a>不算什么宏大叙事的产品，但作为日常查询工具，它的克制反而让人愿意反复使用。
+        </p>
+
+        <div class="pull-quote">
+            有些页面做得太满，反而让人不知道该看什么；而一个好的查询页面，应该像一本翻旧了的手册——条目清晰，答案就在那儿。
+        </div>
+
+        <p>
+            前阵子朋友问我平时用什么看赛程，我随口说了这个。他追问“好用吗”，我当时愣了一下，因为“好用”这个词其实挺模糊的。对我来说，它意味着：没有强制推送的资讯流，搜索栏在最显眼的位置，数据能稳定在赛前赛后几分钟内刷新。就这些。后来他试了试，反馈说确实不吵，适合自己翻着看。我想，这大概就是工具该有的样子——你不必跟它建立什么情感连接，它只是在你需要的时候给出信息。
+        </p>
+
+        <div class="highlight-box">
+            <p><strong>一点延伸阅读的习惯</strong></p>
+            <p>
+                有时候看完一场比赛，我会顺手再打开<a href="https://h5-ayx-sport.com">爱游戏体育</a>的页面，对照一下之前记在笔记本里的阵容数据。这个动作本身没什么特别，但它慢慢变成了一种仪式感：先看赛果，再翻历史交锋，偶尔还能发现之前忽略的替补球员出场时间。这种“查漏补缺”式的浏览，反而比追着新闻看更有收获。
+            </p>
+        </div>
+
+        <p>
+            当然，任何平台都有它的边界。<a href="https://h5-ayx-sport.com">爱游戏体育</a>的功能模块不算多，如果你期待社交互动或深度数据分析，可能会觉得不够。但我恰恰觉得，它的“有限”反而是一种清晰。它不试图成为你手机里的唯一体育应用，而是老老实实做好查询这一个环节。在这个动不动就追求大而全的时代，这种克制倒显得挺有性格。
+        </p>
+
+        <div class="faq-mini">
+            <div class="faq-item">
+                <div class="faq-q">Q：适合什么样的人用？</div>
+                <div class="faq-a">习惯自己查赛程、看比分、做简单对照的人，应该会觉得顺手。不太适合想要社区讨论或视频集锦的用户。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Q：数据更新速度怎么样？</div>
+                <div class="faq-a">基本跟随比赛实时节奏，延迟在可接受范围内。重要赛事的赛前信息通常提前一到两天就会挂出来。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Q：有没有桌面端和移动端的区别？</div>
+                <div class="faq-a">响应式布局，手机浏览器直接打开就能用，不需要另外下载客户端。个人觉得桌面端浏览体验更舒展一些。</div>
+            </div>
+        </div>
+
+        <p style="margin-top: 8px;">
+            最后说一点个人体会：查询工具这东西，用久了会变成一种私人索引。每次打开<a href="https://h5-ayx-sport.com">爱游戏体育</a>，看到的不仅是数字和列表，还有自己之前搜索时留下的痕迹——哪些比赛反复确认过，哪段时间特别关注某个联赛。这种隐形的记录，比收藏夹里的书签更有温度。如果你也在找这样一个安静、可依赖的查询起点，不妨自己试试看。
+        </p>
+
+        <div class="footer-note">
+            — 写于一个寻常的星期三，窗外有风
+        </div>
+    </div>
+</body>
+</html>
