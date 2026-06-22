@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>c7娱乐 · 轻量互动平台</title>
+  <style>
+    /* === 极简留白 · 信息卡片风格 === */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #fafaf9;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #1c1c1a;
+      line-height: 1.7;
+      padding: 2.4rem 1.2rem;
+    }
+
+    .page-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+      padding: 2.8rem 2rem 3.2rem;
+    }
+
+    /* ===== 标题层级 ===== */
+    .hero-title {
+      font-size: 2.1rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.6rem;
+      color: #1c1c1a;
+      line-height: 1.2;
+    }
+    .hero-sub {
+      font-size: 1rem;
+      color: #6b6b68;
+      border-left: 3px solid #d4d4cf;
+      padding-left: 1rem;
+      margin-bottom: 2.4rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 520;
+      margin-top: 2.4rem;
+      margin-bottom: 0.9rem;
+      color: #2b2b29;
+      border-bottom: 1px solid #eeece8;
+      padding-bottom: 0.3rem;
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 520;
+      margin: 1.6rem 0 0.4rem;
+      color: #3b3b38;
+    }
+
+    /* ===== 卡片网格 ===== */
+    .card-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1.2rem 0 1.8rem;
+    }
+    .card-item {
+      background: #f6f6f3;
+      border-radius: 18px;
+      padding: 1.2rem 1.4rem;
+      transition: background 0.2s;
+    }
+    .card-item:hover {
+      background: #efeee9;
+    }
+    .card-item strong {
+      display: block;
+      font-weight: 540;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+      color: #1c1c1a;
+    }
+    .card-item p {
+      font-size: 0.92rem;
+      color: #4a4a47;
+      margin: 0;
+    }
+
+    /* ===== 用途卡片 ===== */
+    .purpose-card {
+      background: #f2f1ed;
+      border-radius: 18px;
+      padding: 1.2rem 1.4rem;
+      margin: 1rem 0 1.6rem;
+    }
+    .purpose-card p {
+      font-size: 0.95rem;
+      color: #3b3b38;
+      margin: 0.4rem 0;
+    }
+
+    /* ===== 场景列表（无符号） ===== */
+    .scene-list {
+      list-style: none;
+      margin: 0.6rem 0 1.2rem;
+    }
+    .scene-list li {
+      padding: 0.4rem 0;
+      font-size: 0.95rem;
+      color: #3b3b38;
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+    .scene-list li::before {
+      content: "·";
+      color: #a8a8a2;
+      font-weight: bold;
+      margin-right: 0.2rem;
+    }
+
+    /* ===== 自然链接样式 ===== */
+    .inline-link {
+      color: #1e6f5c;
+      text-decoration: none;
+      border-bottom: 1px solid #c7d9d2;
+      transition: border-color 0.15s;
+    }
+    .inline-link:hover {
+      border-bottom-color: #1e6f5c;
+    }
+
+    /* ===== FAQ 摘要 ===== */
+    .faq-block {
+      background: #f9f8f6;
+      border-radius: 18px;
+      padding: 1rem 1.4rem;
+      margin: 2rem 0 0.8rem;
+    }
+    .faq-block details {
+      margin: 0.4rem 0;
+      font-size: 0.92rem;
+    }
+    .faq-block summary {
+      font-weight: 500;
+      cursor: pointer;
+      color: #2b2b29;
+      padding: 0.2rem 0;
+    }
+    .faq-block details p {
+      margin: 0.4rem 0 0 1rem;
+      color: #52524e;
+      line-height: 1.6;
+    }
+
+    /* ===== 响应式微调 ===== */
+    @media (max-width: 480px) {
+      .page-wrap { padding: 1.8rem 1.2rem; }
+      .hero-title { font-size: 1.7rem; }
+      h2 { font-size: 1.05rem; }
+      .card-item { padding: 1rem 1.1rem; }
+    }
+
+    /* ===== 页脚留白 ===== */
+    .footer-note {
+      margin-top: 2.6rem;
+      font-size: 0.78rem;
+      color: #969691;
+      text-align: center;
+      border-top: 1px solid #eeede8;
+      padding-top: 1.4rem;
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+  <!-- hero 主视觉 -->
+  <div class="hero-title">c7娱乐</div>
+  <div class="hero-sub">一个面向轻量互动场景的在线平台</div>
+
+  <p style="font-size:0.96rem; color:#3b3b38;">
+    当你第一次看到 <a href="https://h5-c7play.com" class="inline-link">c7娱乐</a> 这个名称时，可能会好奇它具体提供什么。简单来说，它围绕休闲类互动体验构建，用户可以通过浏览器直接参与，无需下载额外软件。以下从几个侧面帮你快速了解它的定位。
+  </p>
+
+  <!-- 用途卡片（主视觉辅助） -->
+  <h2>· 核心用途</h2>
+  <div class="purpose-card">
+    <p><strong>轻量互动 · 即开即用</strong></p>
+    <p>网站以 H5 技术呈现，打开链接就能进入界面。内容方向偏向短时间、低门槛的休闲场景，适合在碎片时间里使用。所有交互都在网页内完成，不涉及本地安装或复杂配置。</p>
+  </div>
+
+  <!-- 信息卡片：特点 -->
+  <h2>· 特点一览</h2>
+  <div class="card-grid">
+    <div class="card-item">
+      <strong>无需下载</strong>
+      <p>通过浏览器直接加载，不占用设备存储空间，也省去安装步骤。</p>
+    </div>
+    <div class="card-item">
+      <strong>界面简洁</strong>
+      <p>页面布局以功能优先，减少冗余装饰，让使用者能快速找到主要操作区。</p>
+    </div>
+    <div class="card-item">
+      <strong>响应式适配</strong>
+      <p>在手机、平板和桌面端都有对应的显示效果，视口变化时内容自动重排。</p>
+    </div>
+  </div>
+
+  <!-- 适合人群 -->
+  <h2>· 适合哪些人</h2>
+  <ul class="scene-list">
+    <li>喜欢轻量在线娱乐、不太想花时间安装应用的用户。</li>
+    <li>偶尔需要短时放松，对页面加载速度和流畅度有一定要求。</li>
+    <li>希望尝试不同互动形式，但又不想注册复杂账号或提供个人资料。</li>
+    <li>熟悉 H5 网页互动，对平台本身保持适度好奇的体验者。</li>
+  </ul>
+
+  <!-- 场景用例 -->
+  <h2>· 可能的场景</h2>
+  <p style="font-size:0.95rem; color:#3b3b38; margin-bottom:0.6rem;">
+    午休间隙、通勤途中、排队等候——这些时间片段里，打开 <a href="https://h5-c7play.com" class="inline-link">c7娱乐</a> 可以快速进入状态。由于是基于网页的轻量互动，结束和离开都很干脆，不会在设备上留下后台进程或残留文件。对注重隐私与便捷的人来说，这是一种低心理负担的选择。
+  </p>
+
+  <!-- FAQ 摘要（简洁但自然） -->
+  <div class="faq-block">
+    <h3 style="margin-top:0; border-bottom:0; padding-bottom:0; font-size:1rem;">▸ 常见疑问摘要</h3>
+    <details>
+      <summary>是否需要注册或登录？</summary>
+      <p>目前平台以即开即用为主，多数功能可直接使用，无需强制注册。部分后续扩展功能可能会有自主选择性的账号关联，但基础体验不受影响。</p>
+    </details>
+    <details>
+      <summary>在移动端体验如何？</summary>
+      <p>H5 版本对触摸操作做了基础优化，按钮和交互区域适配手指点击。建议在系统自带浏览器或 Chrome 中打开，以获得较好兼容性。</p>
+    </details>
+    <details>
+      <summary>平台内容会频繁更新吗？</summary>
+      <p>更新节奏由运营方决定，大致保持周期性调整。因为采用网页形式，每次打开都可能加载到最新版本，无需手动升级。</p>
+    </details>
+  </div>
+
+  <!-- 自然链接段落（第二个链接，符合要求） -->
+  <p style="font-size:0.9rem; color:#5b5b57; margin-top:1.2rem;">
+    如果你想直接体验，可以尝试通过 <a href="https://h5-c7play.com" class="inline-link">c7娱乐</a> 进入主界面。建议在稳定的网络环境下使用，以获得流畅的加载体验。页面本身不主动收集用户信息，你可以放心浏览。
+  </p>
+
+  <!-- 小贴士/提示（非诱导，偏知识） -->
+  <p style="font-size:0.85rem; color:#7a7a75; background:#faf9f7; border-radius:14px; padding:0.8rem 1rem; margin:1.6rem 0 0;">
+    💡 小提示：H5 页面有时会因缓存显示旧版本，如果发现界面异常，可以尝试清除浏览器缓存或使用无痕模式重新打开。
+  </p>
+
+  <div class="footer-note">
+    c7娱乐 · 信息介绍页
+  </div>
+</div>
+</body>
+</html>
